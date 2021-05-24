@@ -1,17 +1,17 @@
 body.home {
-    background-image: url("images/kirby-and-dreseden.jpg.png");
+    background-image: url("./images/kirby-and-dreseden.jpg.png");
     background-repeat: no-repeat;
     background-position: top left bottom right;
     background-size: cover;
 }
 body.demonaccordshome {
-    background-image: url("images/kirby.jpg");
+    background-image: url("./images/kirby.jpg");
     background-repeat: no-repeat;
     background-position: top left bottom right;
     background-size: cover;
   }
 body.dresedenfileshome {
-    background-image: url("images/harrydreseden.jpg");
+    background-image: url("./images/harrydreseden.jpg");
     background-repeat: no-repeat;
     background-position: top left bottom right;
     background-size: cover;
