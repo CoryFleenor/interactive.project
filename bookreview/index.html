@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="main.css">
+    <title>Fleenor's Book Review</title>
+</head>
+
+<body class="home">
+    <header>Fleenor's Book Review</header>
+    <div class="navbar">
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">Series
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="demonaccords.html">The Demon Accords</a>
+                <a href="dresedenfiles.html">The Dreseden Files</a>
+                <a href="colinmccool.html">The Colin McCool Series</a>
+            </div>
+        </div>
+    </div>
+        <div class="firstreviews">
+            <ul>
+                <li class="mySlides" id="johnconroe">God Touched
+                    <img src="images/godtouched.jpg" alt="God Touched Book Cover">
+                    <p>Chris Gordon is a rookie with the NYPD - one with a secret. In his spare time Chris is an exorcist without equal with a gift from God. 
+                        But when he saves a beautiful girl from a demonic attack, he discovers there is more to fear than just demons. 
+                        Finding himself surrounded by vampires, were weasels, and facing a giant short-faced bear, Chris struggles to stay alive, all while protecting his deadly new girlfriend.
+                        And then there's her over protective vampire mother!</p>
+                </li>
+                <li class="mySlides" id="jimbutcher">Storm Front
+                    <img src="images/stormfront.jpg" alt="Storm Front Book Cover">
+                    <p>As a professional wizard, Harry Dresden knows firsthand that the “everyday” world is actually full of strange and magical things—and most of them don’t play well with humans. 
+                        And those that do enjoy playing with humans far too much. He also knows he’s the best at what he does. Technically, he’s the only at what he does. 
+                        But even though Harry is the only game in town, business—to put it mildly—stinks.
+                        So when the Chicago P.D. bring him in to consult on a double homicide committed with black magic, Harry's seeing dollar signs.
+                        But where there's black magic, there's a black mage behind it. And now that mage knows Harry's name...</p>
+                </li>
+                <li class="mySlides" id="junkyardDruid">Junkyard Druid
+                    <img src="images/junkyardDruid.jpg" alt="Junkyard Druid book cover">
+                    <p>When a reluctant druid gets blackmailed into working for an evil faery queen, he'll walk through fire to complete one last job⁠—come hell or high magic!
+                        Every druid knows...
+                        Dealing with the Fae is a death sentence.
+                        So why would I risk my life to help an evil Faery Queen?
+                        A year ago I swore off druidry, and for good reason. Now I spend my days behind six acres of scrap iron, steel, and magic wards, where the fae can’t bother me.
+                        But when a Faery Queen with god-like magical powers calls, you don’t send her to voicemail. Now I have no choice but to find out why evil incarnate has requested my presence.
+                        One thing’s for sure...
+                        If I get dragged back into the supernatural world, there's gonna be hell to pay for it!</p>
+                </li>
+            </ul>
+            <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+            <a class="next" onclick="plusSlides(1)">&#10095</a>
+        </div>
+        <div style="text-align: center;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
