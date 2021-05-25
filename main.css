@@ -6,3 +6,8 @@ header {
     font-size: x-large;
     font-style: italic;
 }
+li {
+    text-align: right;
+    padding: 4px;
+    font-size: large;
+}
