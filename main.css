@@ -18,6 +18,18 @@ header {
   font-size: x-large;
   font-style: italic;
 }
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.item {
+  background: rgba(255, 140, 0, 0.8);
+  color: white;
+  border-radius: 30px;
+  padding: 20px;
+  margin: 10px;
+}
 li {
   display: inline-flex;
   flex-direction: row;
