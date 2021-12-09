@@ -4,27 +4,37 @@ const flipCardFront = document.getElementById("flip-card-front");
 const flipCardBack = document.getElementById("flip-card-back");
 const busImg = document.getElementById("restimg");
 
-const business = [];
-let arr = [];
-
-const API =
+const apiUrl =
   "https://iskarr.github.io/austindonovan.github.io/api/business.json";
 
-fetch(API)
-  .then((response) => {
-    if (response.ok) {
+window.onload = () => {
+  cardMaker();
+};
+
+const cardMaker = () => {
+  fetch(apiUrl)
+    .then((response) => {
       return response.json();
-    } else {
-      throw new Error("No Response");
-    }
-  })
-  .then((data) => {
-    displayBusiness(data);
-  });
+    })
+    .then((data) => {
+      console.log(data);
+      populateData(data);
+    });
+};
 
-function displayBusiness(data) {
-  arr = data.business;
-  console.log(arr);
-}
-
-console.log(business);
+populateData = (business) => {
+  for (let i = 0; (i) => business.length; i++) {
+    document.getElementById(
+      `name${[i]}`
+    ).innerText = `${business.business[i].name}`;
+    document.getElementById(
+      `description${[i]}`
+    ).innerText = `${business.business[i].description}`;
+    document.getElementById(
+      `address${[i]}`
+    ).innerText = `${business.business[i].address}`;
+    document.getElementById(
+      `restimg${[i]}`
+    ).src = `${business.business[i].imageurl}`;
+  }
+};
