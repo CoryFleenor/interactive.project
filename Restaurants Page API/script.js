@@ -23,7 +23,7 @@ const cardMaker = () => {
 };
 
 populateData = (business) => {
-  for (let i = 0; (i) => business.length; i++) {
+  for (let i = 0; i < business.business.length; i++) {
     document.getElementById(
       `name${[i]}`
     ).innerText = `${business.business[i].name}`;
