@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="myaccount.css" />
+    <title>My Account</title>
+  </head>
+  <body>
+    <div class="scrollingHeader" id="scrollingHeader">
+      <img class="imgL" src="./images/tri-peak.jpg" alt="tri peak mountains" />
+      <header>Tri-Peak Banking</header>
+      <img class="imgR" src="./images/tri-peak.jpg" alt="tri peak mountains" />
+    </div>
+    <div class="leftnav" id="leftnav">
+      <div class="innernav" id="innernav">
+        <div class="transferFunds" id="transferFunds">
+          <button>Tranfer Funds</button>
+        </div>
+        <div class="paybills" id="paybills">
+          <button>Pay Bills</button>
+        </div>
+        <div class="coffee" id="coffee">
+          <button class="mincoffee" id="mincoffee">Deduct Coffee</button>
+        </div>
+        <div class="logout" id="logout">
+          <button><a href="index.html">Logout</a></button>
+        </div>
+
+        <h1>Quote Of The Day</h1>
+        <div class="quote-container" id="quote-container">
+          <!-- Quote -->
+          <div class="quote-text">
+            <i class="fas fa-quote-left"></i>
+            <span id="quote"></span>
+          </div>
+          <!-- Author -->
+          <div class="quote-author">
+            <span id="author"></span>
+          </div>
+          <div class="button-container">
+            <button id="new-quote" title="New Quote!">New Quote</button>
+          </div>
+        </div>
+      </div>
+      <!-- Loader -->
+      <div class="loader" id="loader"></div>
+    </div>
+    <div class="mainaccounts">
+      <div class="checking" id="checking">
+        <h1>Checking account Balance:</h1>
+        <h3 class="chkbal" id="chkbal"></h3>
+      </div>
+      <div class="savings" id="savings">
+        <h1>Saving Account Balance:</h1>
+        <h3 class="savbal" id="savbal"></h3>
+      </div>
+      <div class="credit" id="credit">
+        <h1>Avalible Credit:</h1>
+        <h3 class="credbal" id="credbal"></h3>
+      </div>
+    </div>
+  </body>
+  <script src="account.js"></script>
+</html>

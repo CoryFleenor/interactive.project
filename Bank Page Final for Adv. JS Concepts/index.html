@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="main.css">
+    <title>Tri-Peak Banking</title>
+</head>
+<body>
+    <div class="scrollingHeader" id="scrollingHeader">
+        <img class="imgL" src="./images/tri-peak.jpg" alt="tri peak mountains">
+        <header>Tri-Peak Banking</header>
+        <img class="imgR" src="./images/tri-peak.jpg" alt="tri peak mountains">
+        
+    </div>
+    <div class="navbar" id="navbar">
+            <a href="#login">Login</a>
+            <a href="#loanRates">Loan Rates</a>
+            <a href="#statement">Our Story</a>
+            <a href="#newAccount">Open An Account</a>
+            <a href="#creditCard">Apply For Credit</a>
+        </div>
+        <div class="loanRates" id="loanRates"> 
+            <h1 class="ratesHeader" id="ratesHeader">At Tri-Peak Banking our loan rates and terms are never hidden we put them in bold with easy to understand language</h1>
+            <ul>
+                <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+                <li class="mySlides" id="30yr">
+                    <img class=loanimg src="./images/house.jpg" alt="house">
+                    <h1>30 Year Mortgage</h1>
+                    <p>Starting at 3.625%</p>
+                </li>
+                <li class="mySlides" id="15yr">
+                    <img class=loanimg src="./images/house.jpg" alt="house">
+                    <h1>15 Year Mortgage</h1>
+                    <p>Starting at 2.875%</p>
+                </li>
+                <li class="mySlides" id="auto">
+                    <img class=loanimg src="./images/car.jpg" alt="Car">
+                    <h1>Auto Loan</h1>
+                    <p>Starting at 3.625%</p>
+                </li>
+                <li class="mySlides" id="personal">
+                    <img class=loanimg src="./images/cash.jpg" alt="cash and coins">
+                    <h1>Personal Loan</h1>
+                    <p>Starting at 7.74%</p>
+                </li>
+                <li class="mySlides" id="visaCC">
+                    <img src="./images/credit card.jpg" alt="credit card" class="loanimg">
+                    <h1>Visa Credit Card</h1>
+                    <p>Starting at 7.99%</p>
+                </li>
+                <li class="mySlides" id="rvLoan">
+                    <img src="./images/rv.jpg" alt="RV" class="loanimg">
+                    <h1>RV Loans</h1>
+                    <p>Starting at 5.24%</p>
+                </li>
+                <li class="mySlides" id="smallATV">
+                    <img src="./images/atv.jpg" alt="ATV" class="loanimg">
+                    <h1>Small ATV Loans</h1>
+                    <p>Starting at 5.24%</p>
+                </li>
+                <li class="mySlides" id="savings">
+                    <img src="./images/cash.jpg" alt="cash and coins" class="loanimg">
+                    <h1>Savings</h1>
+                    <p>Starting at 0.05%</p>
+                </li>
+                <a class="next" onclick="plusSlides(1)">&#10095</a>
+            </ul>
+        </div>
+        <div class="login" id="login">
+            <h1>Log In To Check Your Balance</h1>
+        </div>
+            <div class="container">
+            <form class="form" id="form">
+                <div class="form-group">
+                    <label for="username">User Name</label>
+                    <input 
+                    type="text"
+                    id="username"
+                    placeholder="User Name"
+                    required
+                    minlength="4"
+                    maxlength="15"
+                    name="username"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input 
+                    type="password"
+                    id="password"
+                    placeholder="Enter Your Password"
+                    required
+                    pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+                    title="Please include at least 1 uppercase 1 lowercase and 1 number"
+                    />
+                </div>
+                <button class="signIn" type="submit" disabled><a href=myaccount.html>Sign In</a></button>
+            </form>
+            </div>
+    <div class="statement" id="statement">
+        <h1>How We Started</h1>
+        <p>Lorem ipsum dolor sit. Eum totam aspernatur aliquam praesentium aperiam magni, dignissimos, atque incidunt fuga nulla distinctio eligendi enim placeat nesciunt, soluta maxime nihil ipsa minus!</p>
+        <h1>Our Promise To Our Customers</h1>
+        <p>Lorem ipsum dolor sit. Eum totam aspernatur aliquam praesentium aperiam magni, dignissimos, atque incidunt fuga nulla distinctio eligendi enim placeat nesciunt, soluta maxime nihil ipsa minus!</p>
+        <h1>Paving The Way For The Future Of Banking</h1>
+        <p>Lorem ipsum dolor sit. Eum totam aspernatur aliquam praesentium aperiam magni, dignissimos, atque incidunt fuga nulla distinctio eligendi enim placeat nesciunt, soluta maxime nihil ipsa minus!</p>
+        <h1>Make Sure To Contact Us</h1>
+        <p>Lorem ipsum dolor sit. Eum totam aspernatur aliquam praesentium aperiam magni, dignissimos, atque incidunt fuga nulla distinctio eligendi enim placeat nesciunt, soluta maxime nihil ipsa minus!</p>
+    </div>
+    <h1>Create An Account</h1>
+    <div class="newAccount" id="newAccount">    
+      <!-- form -->
+      <form id="form">
+        <!-- Full Name -->
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Full Name"
+            required
+            minlength="3"
+            maxlength="100"
+            name="name"
+          />
+        </div>
+        <!-- Phone Number -->
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input
+            type="tel"
+            id="Phone"
+            placeholder="555-555-5555"
+            required
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            name="phone"
+          />
+        </div>
+        <!-- Email Address -->
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="email@address.com"
+            required
+            name="email"
+          />
+        </div>
+        <button type="submit">Apply Today</button>
+        </form>
+    </div>
+    <h1>Apply For Credit Today!</h1>
+    <div class="creditCard" id="creditCard">    
+        <!-- form -->
+        <form id="form">
+          <!-- Full Name -->
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Full Name"
+              required
+              minlength="3"
+              maxlength="100"
+              name="name"
+            />
+          </div>
+          <!-- Phone Number -->
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              id="Phone"
+              placeholder="555-555-5555"
+              required
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              name="phone"
+            />
+          </div>
+          <!-- Email Address -->
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="email@address.com"
+              required
+              name="email"
+            />
+          </div>
+          <button type="submit">Apply Today</button>
+          </form>
+      </div>
+      <footer>Be Sure To Contact Us For Any Of Your Banking Needs!!!</footer>
+</body>
+<script src="script.js"></script>
+</html>
